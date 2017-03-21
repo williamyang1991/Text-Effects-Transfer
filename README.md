@@ -12,16 +12,18 @@ It is provided for educational/research purpose only. Please consider citing our
 
 To run the code, please use the main function text_stylization.m.<br> 
 ##### Example: 
-> textEffectFinal = text_stylization('flame', 'shu', 'huo', 'imgs/', optS); 
+   textEffectFinal = text_stylization('flame', 'shu', 'huo', 'imgs/', optS); 
 
    
 ### External codes
 
-> 1. Flann: for fast approximate nearest neighbor searching.
->>    http://www.cs.ubc.ca/research/flann/
+   1. Flann: for fast approximate nearest neighbor searching.
+   
+      http://www.cs.ubc.ca/research/flann/
 
-> 2. mirt2D_mexinterp: for fast 2D linear interpolation.
->>   http://www.mathworks.com/matlabcentral/fileexchange/24183-2d-interpolation/content/mirt2D_mexinterp/mirt2D_mexinterp.m
+   2. mirt2D_mexinterp: for fast 2D linear interpolation.
+   
+      http://www.mathworks.com/matlabcentral/fileexchange/24183-2d-interpolation/content/mirt2D_mexinterp/mirt2D_mexinterp.m
 
 
 ### Contact
