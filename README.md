@@ -1,7 +1,5 @@
 # Text-Effects-Transfer
 
-# === coming soon ===
-
 This is a Matlab implementation of the paper.
 
 Shuai Yang, Jiaying Liu, Zhouhui Lian and Zongming Guo, 
