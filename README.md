@@ -1,5 +1,7 @@
 # Text-Effects-Transfer
 
+# === coming soon ===
+
 This is a Matlab implementation of the paper.
 
 Shuai Yang, Jiaying Liu, Zhouhui Lian and Zongming Guo, 
@@ -10,9 +12,11 @@ This code builds upon the PatchMatch algorithm (https://github.com/jbhuang0604/S
 
 It is provided for educational/research purpose only. Please consider citing our paper if you find the software useful for your work.
 
-To run the code, please use the main function text_stylization.m.<br> 
+To run the code, please use the main function text_stylization.m.
+
 ##### Example: 
-   textEffectFinal = text_stylization('flame', 'shu', 'huo', 'imgs/', optS); 
+
+      textEffectFinal = text_stylization('flame', 'shu', 'huo', 'imgs/', optS); 
 
    
 ### External codes
