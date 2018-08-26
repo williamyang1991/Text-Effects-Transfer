@@ -1,9 +1,6 @@
-sty = 'flame';
-src = 'shu';
-trg = 'huo';
+startup;
 
-imgpath = 'imgs/';
-
-textEffectFinal = text_stylization(sty, src, trg, imgpath);   
+textEffectFinal = text_stylization(imread('imgs/shu-flame.png'), 'shu', imread('imgs/shu-text.png'), imread('imgs/huo-text.png')); 
 
 imwrite(textEffectFinal, [imgpath, trg, '-', sty, '-', src, '.png']);
+
