@@ -9,6 +9,7 @@ function textEffectFinal = text_stylization(sty, src, srctext, trgtext, optS)
 %   - src: the name of the source character (for cache)
 % 	- trgtext: target character image
 % 	- optS: parameters
+
 % Output:
 %	- textEffectFinal: target text effects
 % 
