@@ -1,3 +1,5 @@
+I fixed a bug and changed something so that it can be more convenient to use. (*^▽^*)
+
 # Text-Effects-Transfer
 
 This is a Matlab implementation of the paper.

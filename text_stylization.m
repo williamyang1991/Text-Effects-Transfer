@@ -1,14 +1,15 @@
-function textEffectFinal = text_stylization(sty, src, trg, imgpath, optS)
+function textEffectFinal = text_stylization(sty, src, srctext, trgtext, optS)
 
 % TEXT_STYLIZATION
 %     text effects transfer such that S:S'::T:T'
 % 
 % Input:
-% 	- sty: name of text effects
-% 	- src: name of the source character
-% 	- trg: name of the target character
-% 	- imgpath: image path
+% 	- sty: text effects image
+% 	- srctext: source character image
+%   - src: the name of the source character (for cache)
+% 	- trgtext: target character image
 % 	- optS: parameters
+
 % Output:
 %	- textEffectFinal: target text effects
 % 
@@ -33,18 +34,12 @@ function textEffectFinal = text_stylization(sty, src, trg, imgpath, optS)
 % Option parameters
 optS = init_opt();
 
-srcimgFileName = [imgpath, src, '-', sty, '.png'];
-srctextFileName = [imgpath, src, '-text.png'];
-trgtextFileName = [imgpath, trg, '-text.png'];
-
-fprintf('- Read images \n'); 
-
 % source text effects S'
-srcimg = im2double(imread(srcimgFileName)); 
+srcimg = im2double(sty); 
 % source text S
-srctext = im2double(rgb2gray(imread(srctextFileName))); 
+srctext = im2double(rgb2gray(srctext)); 
 % target text T
-trgtext = im2double(rgb2gray(imread(trgtextFileName)));
+trgtext = im2double(rgb2gray(trgtext));
 % target text effects T'
 trgimg = zeros(size(trgtext,1), size(trgtext, 2), 3);   
 % optinal 

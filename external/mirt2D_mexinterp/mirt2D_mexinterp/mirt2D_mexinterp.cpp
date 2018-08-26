@@ -99,8 +99,9 @@ int ndim
 void mexFunction( int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[] )
 {
     double *Z, *S, *T, *F;
-    int  N, M, MN, nrows, ncols, vol, ndim, *newdims;
-    const int *dims;
+    int  N, M, MN, nrows, ncols, vol, ndim;
+    const unsigned long *dims;
+    unsigned long * newdims;
     
      /* Check for input errors */
     if (nlhs>1)
@@ -120,7 +121,7 @@ void mexFunction( int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[] )
     N = mxGetN(IN_S);
     ndim = mxGetNumberOfDimensions(IN_Z);
     dims = mxGetDimensions(IN_Z);
-    newdims = (int*) calloc(ndim, sizeof(int));
+    newdims = (unsigned long*) calloc(ndim, sizeof(unsigned long));
     
     /*Size of the array to allocate for the interpolated points*/
     *newdims=M;newdims[1]=N; MN=M*N; vol=1;
