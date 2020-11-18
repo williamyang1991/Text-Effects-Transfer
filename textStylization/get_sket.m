@@ -31,6 +31,9 @@ for i = 1:n
         i1 = pi(k);
         j1 = pj(k);
         % remove the branchpoint
+        if i1 == 1 || j1 == 1 || i1 == size(sket,1) || j1 == size(sket,2)
+            continue;
+        end
         sket(i1-1:i1+1, j1-1:j1+1) = 0;
         % remove small branches
         sket2 = bwareaopen(sket, thresh);
